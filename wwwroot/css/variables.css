@@ -1,0 +1,9 @@
+﻿:root {
+	--yellow: #FDB714;
+	--blue: #273691;
+	--red: #B82601;
+	--black: #000;
+	--white: #fff;
+	--transition: all .2s ease-in-out;
+	--fontFamily1: "Lato";
+}
