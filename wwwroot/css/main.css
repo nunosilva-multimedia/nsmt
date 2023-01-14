@@ -147,6 +147,7 @@ footer .container .contacts .text {
     font-weight: 400;
     font-style: normal;
     font-size: 1.25rem;
+    width: 100%;
 }
 
 footer .container .social .text, footer .container .contacts .text {
