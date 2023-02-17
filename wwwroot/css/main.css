@@ -19,6 +19,37 @@ body{
     height: 100vh;
 }
 
+/********** Buttons **********/
+.btn{
+	background: linear-gradient(to right, var(--black) 50%, var(--blue) 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	color: var(--white);
+	font-family: var(--fontFamily1);
+	font-weight: 700;
+	font-style: normal;    
+	border: none !important;
+    border-radius: none !important;
+	cursor: pointer;
+    text-align: center;
+	text-decoration: none;
+    text-transform: uppercase;
+	transition: var(--transition);
+	-webkit-transition: var(--transition);
+}
+
+.btn:active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.btn:hover {
+    background-position: left bottom;
+	color: var(--yellow);
+}
+
 main {
     padding: 0;
     padding-top: 60px;
@@ -42,18 +73,39 @@ main .content {
 }
 
 main .content img {
-    width: 100%;
+    width: 75%;
 }
 
 main .content .subtitle {
     margin: 0;
-    padding: 25px 0;
+    padding: 25px 0 0 0;
     font-family: "Lato";
     font-weight: 700;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.75rem;
     text-align: center;
     text-transform: uppercase;
+}
+
+main .content .container{
+    padding: 0 0 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .content .container p{
+    font-size: 1.5rem;
+    font-family: "Lato";
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+main .content .container .btn{
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 
 @media (max-width: 710px) {
@@ -96,7 +148,8 @@ footer {
 footer .container{
     margin: 0 auto;
     display: flex;
-    max-width: 800px;
+    max-width: 900px;
+    justify-content: space-between;
 }
 
 footer .container .social, footer .container .contacts {
@@ -105,6 +158,7 @@ footer .container .social, footer .container .contacts {
     justify-content: center;
     text-align: center;
     width: 50%;
+    max-width: 285px;
 }
 
 
@@ -147,7 +201,6 @@ footer .container .contacts .text {
     font-weight: 400;
     font-style: normal;
     font-size: 1.25rem;
-    width: 100%;
 }
 
 footer .container .social .text, footer .container .contacts .text {
